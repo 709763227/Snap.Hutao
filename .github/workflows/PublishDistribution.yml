@@ -25,4 +25,9 @@ jobs:
           fileName: "*.zip"
           out-file-path: ./release-download
           
+      - uses: actions/upload-artifact@main
+        with:
+          name: webpack artifacts
+          path: ./release-download/
+          
 
